@@ -1,5 +1,3 @@
-package org.smart4j.chapter2.test;
-
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -9,6 +7,7 @@ import org.smart4j.chapter2.service.CustomerService;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 
 /**
  * 单元测试
