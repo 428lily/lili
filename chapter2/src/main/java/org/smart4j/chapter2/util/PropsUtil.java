@@ -67,32 +67,31 @@ public class PropsUtil {
     return getInt(props, key, 0);
   }
 
-    /**
-     * 获取数值型属性(可指定默认值)
-     */
-    public static int getInt(Properties props,String key,int defaultValue){
-        int value = defaultValue;
-        if (props.containsKey(key)){
-            //value = CastUtil.castInt(props.getProperty(key));
-        }
-        return value;
+  /**
+   * 获取数值型属性(可指定默认值)
+   */
+  public static int getInt(Properties props, String key, int defaultValue) {
+    int value = defaultValue;
+    if (props.containsKey(key)) {
+      value = CastUtil.castInt(props.getProperty(key));
     }
+    return value;
+  }
 
   /**
    * 获取布尔型属性(默认值为false)
    */
   public static Boolean getBoolean(Properties props, String key) {
-    //return getInt(props, key, false);
-    return false;
+    return getBoolean(props, key, false);
   }
 
   /**
    * 获取布尔型属性(可指定默认值)
    */
-  public static Boolean getBoolean(Properties props,String key,Boolean defaultValue){
+  public static Boolean getBoolean(Properties props, String key, Boolean defaultValue) {
     boolean value = defaultValue;
-    if (props.containsKey(key)){
-      //value = CastUtil.castBoolean(props.getProperty(key));
+    if (props.containsKey(key)) {
+      value = CastUtil.castBoolean(props.getProperty(key));
     }
     return value;
   }
