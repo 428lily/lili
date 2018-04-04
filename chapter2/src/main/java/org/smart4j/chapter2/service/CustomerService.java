@@ -50,7 +50,7 @@ public class CustomerService {
    * @return
    */
   public boolean createCustomer(Map<String, Object> fieldMap) {
-    // TODO
+    DatabaseHelper.insertEntity(Customer.class,fieldMap);
     return false;
   }
 
@@ -62,7 +62,7 @@ public class CustomerService {
    * @return
    */
   public boolean updateCustomer(long id, Map<String, Object> fieldMap) {
-    // TODO
+    DatabaseHelper.updateEntity(Customer.class,id,fieldMap);
     return false;
   }
 
@@ -73,7 +73,7 @@ public class CustomerService {
    * @return
    */
   public boolean deleteCustomer(long id) {
-    // TODO
+    DatabaseHelper.deleteEntity(Customer.class,id);
     return false;
   }
 }
